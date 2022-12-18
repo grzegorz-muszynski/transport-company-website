@@ -1,0 +1,209 @@
+/*Just for Maitree font */
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@400;500&display=swap');
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Here we define how many columns and how big they should be. fr above mean space will be devided by 4 different columns. */
+    grid-template-rows: auto;
+    grid-gap: 2px; /* gap between pictures */
+    grid-template-areas:
+    "gallery-p gallery-p gallery-p gallery-p" /*we create empty space  */
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img2 img2 img3" /* we use our labels/names */
+    "img4 img5 img6 img7";
+    margin-right: 2px;
+    margin-left: 2px;
+}
+#gallery .gallery-img { /*first hashtag is for id of all gallery, then gallery-img is for all pictures one by one*/
+    width: 100%;
+    height: 16vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: grab;
+    margin-bottom: 1px;
+    margin-top: 4px;
+}
+@media (min-width: 1000px) {
+    #gallery {
+        width: 771px;
+        max-height: 385px;
+        margin-left: calc((100% - 771px) / 2);
+    }
+    .gallery-img {
+        max-height: 192px;
+    }
+}
+@media (max-width: 680px) {
+    #gallery {
+        grid-template-columns: 1fr 1fr; /* Here we define how many columns and how big they should be. fr above mean space will be devided by 4 different columns. */
+        grid-template-rows: auto;
+        grid-gap: 2px; /* gap between pictures */
+        grid-template-areas:
+        "gallery-p gallery-p"
+        "gallery-p gallery-p" /*we create empty space  */
+        "gallery-h2 gallery-h2"
+        "gallery-h2 gallery-h2"
+        "img2 img2"
+        "img1 img3" /* we use our labels/names */
+        "img4 img5"
+        "img6 img7";
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    #gallery .gallery-img { /*first hashtag is for id of all gallery, then gallery-img is for all pictures one by one*/
+        width: 100%;
+        height: 36vw;
+    }
+}
+/* Images */
+#gallery p {
+    grid-area: gallery-p; /* Here is name, label */
+}
+
+#gallery h2 {
+    grid-area: gallery-h2;
+}
+
+#gallery .img1 {  /*Now we define style for first image */
+    grid-area: img1; /* It's name for that one */
+    background-image: url("../thumbs/img1.jpg"); /* Thumb here */
+}
+
+#gallery .img2 {
+    grid-area: img2;
+    background-image: url("../thumbs/img2.jpg");
+}
+
+#gallery .img3 {
+    grid-area: img3;
+    background-image: url("../thumbs/img3.jpg");
+}
+
+#gallery .img4 {
+    grid-area: img4;
+    background-image: url("../thumbs/img4.jpg");
+}
+
+#gallery .img5 {
+    grid-area: img5;
+    background-image: url("../thumbs/img5.jpg");
+}
+
+#gallery .img6 {
+    grid-area: img6;
+    background-image: url("../thumbs/img6.jpg");
+}
+
+#gallery .img7 {
+    grid-area: img7;
+    background-image: url("../thumbs/img7.jpg");
+}
+/* Gallery image titles */
+.gallery-img div { /* Adding that covers picture's titles */
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-img div:hover { /* The hover effect */
+    opacity: 0.85;
+    transition: all ease-in-out 100ms; /* Time for effect */
+}
+
+.gallery-img a { /* now we style the text */
+    /* font-family: TimesNewRoman; */
+    font-family: 'Maitree', serif;
+    font-size: 2vh;
+    color: #D3D5D2;
+    /* background-color: #122633; */
+    text-decoration: none; /* It's only because there is underlining by default */
+    text-align: center;
+}
+@media (max-width: 900px) {
+    .gallery-img a {
+        font-size: 2vw;
+    }
+}
+/* This is window which pop up when clicked */
+.img-window {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 38, 51, 0.9);
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* z-index decides which layer is more improtant and cover the other one  */
+}
+.description {
+    padding: 0px 2px 0px 2px;
+}
+
+.img-window img { /* This "img" is tagName from line 25 (let newImg = document.createElement("img");).    Putting "img" means we gonna style img inside the container */
+    max-height: 80vh; /* 100% height of the viewport */
+    max-width: 80vh;
+    object-position: center;
+}
+/* I added the code below to make it responsive for smartphones */
+@media (max-width: 800px) {
+    .img-window img {
+        height: auto;
+        width: 80%;
+        object-position: center;
+    }
+}
+/* Next image */
+.img-btn-next {
+    display: block;
+    padding: 3px 8px;
+    border-radius: 5px; /* we make corners less sharp. It will be not completely squared */
+    position: fixed;
+    top: 48vh; /* It's counted from top of the browser */
+    z-index: 200;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    color: #122633;
+    background-color: #D3D5D2;
+    font-family: 'Maitree', serif;
+}
+
+.img-btn-next:hover {
+    opacity: 0.85;
+    color: #122633;
+}
+/* Previous image */
+.img-btn-prev {
+    display: block; /* Block is anchor tag, thanks to it we can add padding, background etc. */
+    padding: 3px 8px;
+    border-radius: 5px; /* we make corners less sharp. It will be not completely squared */
+    position: fixed;
+    top: 48vh; /* It's counted from top of the browser */
+    z-index: 200;
+    cursor: pointer;
+    text-decoration: none; /* Removing underlining */
+    font-weight: bold;
+    color: #122633;
+    background-color: #D3D5D2;
+    font-family: 'Maitree', serif;
+}
+
+.img-btn-prev:hover {
+    opacity: 0.85;
+    color: #122633;
+}
+/* @media (max-width: 830px) {
+    .img-btn-next::after {
+        content: ">";
+    }
+    .img-btn-prev::before {
+        content: "<";
+    }
+} */

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="210mm"
+   viewBox="0 0 210 210"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="360.88425"
+     inkscape:cy="552.62698"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g857"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
+       id="g857"
+       transform="matrix(0.26458333,0,0,0.26458333,-209.32778,-32.114766)">
+      <g
+         transform="matrix(3.3579055,0,0,3.3577884,-3538.3737,-759.79222)"
+         id="g787">
+        <path
+   d="m 1408.11,498.139 c 64.56,0 117.08,-52.521 117.08,-117.077 0,-64.556 -52.52,-117.076 -117.08,-117.076 -64.56,0 -117.08,52.52 -117.08,117.076 0,64.556 52.52,117.077 117.08,117.077 z m -9.12,-67.993 c -12.42,0.539 -24.34,2.165 -35.53,4.853 8.21,22.49 21.06,38.5 35.53,43.342 z m 18.24,-0.003 v 48.198 c 14.47,-4.844 27.32,-20.856 35.53,-43.349 -11.19,-2.686 -23.12,-4.312 -35.53,-4.849 z m 53.24,10.27 c -3.42,9.695 -7.62,18.373 -12.52,25.932 9.24,-5.423 17.62,-12.349 24.65,-20.406 -3.75,-2.016 -7.81,-3.866 -12.13,-5.526 z m -124.72,0.014 c -4.34,1.667 -8.4,3.51 -12.13,5.511 7.03,8.058 15.41,14.984 24.65,20.406 -4.9,-7.555 -9.1,-16.23 -12.52,-25.917 z m 160.75,-50.243 h -26.64 c -0.51,11.282 -1.97,22.263 -4.34,32.701 6.49,2.402 12.46,5.14 17.81,8.154 7.32,-12.446 11.84,-26.482 13.17,-40.855 z m -170.14,0 h -26.64 c 1.33,14.382 5.85,28.411 13.17,40.848 5.35,-3.011 11.32,-5.743 17.82,-8.145 -2.38,-10.443 -3.84,-21.421 -4.35,-32.703 z m 62.63,0 h -44.35 c 0.5,9.377 1.75,18.548 3.73,27.332 12.83,-3.164 26.47,-5.054 40.62,-5.624 z m 62.59,0 h -44.35 v 21.708 c 14.15,0.57 27.79,2.457 40.63,5.617 1.98,-8.778 3.22,-17.945 3.72,-27.325 z m -138.69,-59.09 c -7.32,12.443 -11.84,26.475 -13.17,40.846 h 26.64 c 0.51,-11.279 1.97,-22.263 4.35,-32.7 -6.5,-2.403 -12.47,-5.136 -17.82,-8.146 z m 35.48,13.517 c -1.98,8.781 -3.23,17.949 -3.73,27.329 h 44.35 v -21.706 c -14.14,-0.569 -27.78,-2.459 -40.62,-5.623 z m 99.49,0.006 c -12.83,3.158 -26.47,5.048 -40.63,5.617 v 21.706 h 44.35 c -0.5,-9.376 -1.74,-18.546 -3.72,-27.323 z m 35.47,-13.529 c -5.35,3.015 -11.32,5.751 -17.81,8.154 2.37,10.442 3.83,21.417 4.34,32.698 h 26.64 c -1.33,-14.388 -5.86,-28.42 -13.17,-40.852 z m -76.1,-47.305 v 48.198 c 12.42,-0.535 24.35,-2.159 35.53,-4.846 -8.21,-22.495 -21.06,-38.509 -35.53,-43.352 z m -18.24,0 c -14.47,4.845 -27.32,20.861 -35.53,43.345 11.19,2.688 23.12,4.315 35.53,4.853 z m 58.96,11.997 c 4.9,7.563 9.1,16.242 12.52,25.934 4.33,-1.663 8.39,-3.513 12.13,-5.525 -7.03,-8.06 -15.41,-14.986 -24.65,-20.409 z m -99.68,0.003 c -9.24,5.42 -17.61,12.343 -24.65,20.406 3.72,1.996 7.78,3.841 12.13,5.51 3.42,-9.687 7.62,-18.36 12.52,-25.916 z"
+   style="fill:#1d1d1b"
+   id="path785" />
+
+    </g>
+      <ellipse
+         style="fill:#ff0000;fill-rule:evenodd"
+         id="path873"
+         cx="301.16013"
+         cy="251.37865"
+         rx="108.57143"
+         ry="110" />
+    </g>
+  </g>
+</svg>
