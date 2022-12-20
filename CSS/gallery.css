@@ -118,7 +118,7 @@
     font-family: 'Maitree', serif;
     font-size: 2vh;
     color: #D3D5D2;
-    text-decoration: none; /* It's only because there is underlining by default */
+    text-decoration: none; /* Only because there is underlining by default */
     text-align: center;
 }
 @media (max-width: 900px) {
@@ -149,7 +149,7 @@
     max-width: 80vh;
     object-position: center;
 }
-/* the code below to make it responsive for smartphones */
+/* responsive for smartphones */
 @media (max-width: 800px) {
     .img-window img {
         height: auto;
