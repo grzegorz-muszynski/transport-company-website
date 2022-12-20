@@ -3,18 +3,18 @@
 
 #gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Here we define how many columns and how big they should be. fr above mean space will be devided by 4 different columns. */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 2px; /* gap between pictures */
+    grid-gap: 2px;
     grid-template-areas:
-    "gallery-p gallery-p gallery-p gallery-p" /*we create empty space  */
+    "gallery-p gallery-p gallery-p gallery-p"
     "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
-    "img1 img2 img2 img3" /* we use our labels/names */
+    "img1 img2 img2 img3"
     "img4 img5 img6 img7";
     margin-right: 2px;
     margin-left: 2px;
 }
-#gallery .gallery-img { /*first hashtag is for id of all gallery, then gallery-img is for all pictures one by one*/
+#gallery .gallery-img {
     width: 100%;
     height: 16vw;
     background-repeat: no-repeat;
@@ -36,38 +36,38 @@
 }
 @media (max-width: 680px) {
     #gallery {
-        grid-template-columns: 1fr 1fr; /* Here we define how many columns and how big they should be. fr above mean space will be devided by 4 different columns. */
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        grid-gap: 2px; /* gap between pictures */
+        grid-gap: 2px;
         grid-template-areas:
         "gallery-p gallery-p"
-        "gallery-p gallery-p" /*we create empty space  */
+        "gallery-p gallery-p"
         "gallery-h2 gallery-h2"
         "gallery-h2 gallery-h2"
         "img2 img2"
-        "img1 img3" /* we use our labels/names */
+        "img1 img3"
         "img4 img5"
         "img6 img7";
         margin-right: 2px;
         margin-left: 2px;
     }
-    #gallery .gallery-img { /*first hashtag is for id of all gallery, then gallery-img is for all pictures one by one*/
+    #gallery .gallery-img {
         width: 100%;
         height: 36vw;
     }
 }
 /* Images */
 #gallery p {
-    grid-area: gallery-p; /* Here is name, label */
+    grid-area: gallery-p;
 }
 
 #gallery h2 {
     grid-area: gallery-h2;
 }
 
-#gallery .img1 {  /*Now we define style for first image */
-    grid-area: img1; /* It's name for that one */
-    background-image: url("../thumbs/img1.jpg"); /* Thumb here */
+#gallery .img1 {
+    grid-area: img1;
+    background-image: url("../thumbs/img1.jpg");
 }
 
 #gallery .img2 {
@@ -100,7 +100,7 @@
     background-image: url("../thumbs/img7.jpg");
 }
 /* Gallery image titles */
-.gallery-img div { /* Adding that covers picture's titles */
+.gallery-img div {
     width: 100%;
     height: 100%;
     background-color: #000000;
@@ -109,17 +109,15 @@
     justify-content: center;
     align-items: center;
 }
-.gallery-img div:hover { /* The hover effect */
+.gallery-img div:hover {
     opacity: 0.85;
-    transition: all ease-in-out 100ms; /* Time for effect */
+    transition: all ease-in-out 100ms;
 }
 
-.gallery-img a { /* now we style the text */
-    /* font-family: TimesNewRoman; */
+.gallery-img a {
     font-family: 'Maitree', serif;
     font-size: 2vh;
     color: #D3D5D2;
-    /* background-color: #122633; */
     text-decoration: none; /* It's only because there is underlining by default */
     text-align: center;
 }
@@ -128,7 +126,7 @@
         font-size: 2vw;
     }
 }
-/* This is window which pop up when clicked */
+
 .img-window {
     width: 100%;
     height: 100%;
@@ -140,18 +138,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100; /* z-index decides which layer is more improtant and cover the other one  */
+    z-index: 100;
 }
 .description {
     padding: 0px 2px 0px 2px;
 }
 
-.img-window img { /* This "img" is tagName from line 25 (let newImg = document.createElement("img");).    Putting "img" means we gonna style img inside the container */
-    max-height: 80vh; /* 100% height of the viewport */
+.img-window img {
+    max-height: 80vh;
     max-width: 80vh;
     object-position: center;
 }
-/* I added the code below to make it responsive for smartphones */
+/* the code below to make it responsive for smartphones */
 @media (max-width: 800px) {
     .img-window img {
         height: auto;
@@ -163,9 +161,9 @@
 .img-btn-next {
     display: block;
     padding: 3px 8px;
-    border-radius: 5px; /* we make corners less sharp. It will be not completely squared */
+    border-radius: 5px;
     position: fixed;
-    top: 48vh; /* It's counted from top of the browser */
+    top: 48vh;
     z-index: 200;
     cursor: pointer;
     text-decoration: none;
@@ -181,14 +179,14 @@
 }
 /* Previous image */
 .img-btn-prev {
-    display: block; /* Block is anchor tag, thanks to it we can add padding, background etc. */
+    display: block;
     padding: 3px 8px;
-    border-radius: 5px; /* we make corners less sharp. It will be not completely squared */
+    border-radius: 5px;
     position: fixed;
-    top: 48vh; /* It's counted from top of the browser */
+    top: 48vh;
     z-index: 200;
     cursor: pointer;
-    text-decoration: none; /* Removing underlining */
+    text-decoration: none;
     font-weight: bold;
     color: #122633;
     background-color: #D3D5D2;
@@ -199,11 +197,3 @@
     opacity: 0.85;
     color: #122633;
 }
-/* @media (max-width: 830px) {
-    .img-btn-next::after {
-        content: ">";
-    }
-    .img-btn-prev::before {
-        content: "<";
-    }
-} */
