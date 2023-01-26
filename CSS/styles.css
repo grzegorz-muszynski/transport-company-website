@@ -7,7 +7,7 @@
 }
 body {
     background-color: #122633;   /* Darker blue */
-    color: #244C66;
+    color: #244C66;  /* Yellow */
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -17,7 +17,7 @@ body {
 
 article {
     background-color: #D3D5D2; /* white-gray */
-    color: #401E08;
+    color: #401E08;  /* black */
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
@@ -29,7 +29,11 @@ article {
 }
 /* Carousel */
 .my_carousel {
+    /* width: 100%; */
     height: 25vw;
+}
+.into_carousel {
+    /* object-fit: fill; */
 }
 .carousel-item {
     height: 25vw;
@@ -44,6 +48,7 @@ article {
 .img_carousel_4 {
     object-position: bottom;
 }
+/* doesnt squeeze less than 386px */
 
 /* Flags */
 .all-flags {
@@ -53,6 +58,7 @@ article {
 }
 @media (max-width: 460px) {
     .all-flags {
+        /* width: 100%; */
         width: 80vw;
         height: 1px;
         margin-top: 50px;
@@ -104,17 +110,17 @@ article {
 }
 @media (max-width: 770px) {
     .text {
-    font-size: 18px;
+        font-size: 18px;
     }
 }
 @media (max-width: 565px) {
     .text {
-    font-size: 14px;
+        font-size: 14px;
     }
 }
 @media (max-width: 440px) {
     .text {
-    font-size: 12px;
+        font-size: 12px;
     }
 }
 #turbine_img {
@@ -123,9 +129,15 @@ article {
     padding-left: 3px;
     padding-top: 15px;
 }
+/* @media (max-width: 800px) {
+    #turbine {
+        width: 200px;
+    }
+} */
 .logo_menu {
     display: flex;
     align-items: center;
+    /* margin-top: -10px; */
     border-bottom: 1.5px #122633;
     border-bottom-style: ridge;
 }
@@ -137,11 +149,12 @@ article {
     height: 160px;
     object-fit: cover;
 }
+/* Nav */
 .nav-link {
     display: inline-block;
     position: relative;
     color: black;
-    font-size: 25px;
+    font-size: 25px;/* text-transform: uppercase; */
 }
 @media (max-width: 1165px) {
     .logo_href {
@@ -173,6 +186,7 @@ article {
     }
     .logo {
         width: 170px;
+        /* height: 80px; */
         margin: -13px auto;
         object-fit: fill;
     }
@@ -186,21 +200,21 @@ article {
     content: '';
     position: absolute;
     width: 100%;
-    transform: scaleX(0);
-    height: 1px;
+    transform: scaleX(0); /* it initially hide the element */
+    height: 1px; /* thickness of underline */
     bottom: 0;
     left: 0;
-    background-color: #122633;
+    background-color: #122633; /* color of underscore */
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     color: black;
   }
 
 .nav-link:hover:after {
-    transform: scaleX(1);
+    transform: scaleX(1); /* while hovering the underscore is displayed */
     transform-origin: bottom left;
 }
-.nav-link:hover, nav-link:focus, nav-link:active {
+.nav-link:hover, nav-link:focus, nav-link:active { /* thanks to this, the blue color while hovering disapeared */
     color: black;
     text-decoration: none;
 }
@@ -208,10 +222,12 @@ article {
 .menu-toggle-btn {
     float: center;
     font-size: 28px;
+    /* padding-left: 20vw; */
     display: none !important;
 }
 @media (max-width: 725px) {
     .menu_toggle {
+        /* display: flex; */
         display: block;
         flex-direction: column-reverse;
     }
@@ -227,6 +243,7 @@ article {
         flex-direction: column;
         background-color: #122633;
         border-radius: 6px;
+        /* width: 35vw; */
         width: 160px;
     }
     .nav a {
@@ -238,10 +255,11 @@ article {
     }
     .logo_menu {
         flex-direction: column;
-        overflow: hidden;
+        overflow: hidden; /*makes the part going out of div dissapears */
         justify-content: center;
     }
     .logo_href {
+        /* margin-left: calc((100% - 150px) / 2); */
         justify-content: center;
         margin: 5px 0 0 0;
     }
@@ -328,12 +346,12 @@ article {
 #comment, .small_form {
     border: 1.2px solid #122633;
     background-color: #DCDDDB;
-    color: #122633;
+    color: #122633;  /* color of text written by user */
 }
 
 ::placeholder {
     color: #122633;
-    opacity: 1;
+    opacity: 1; /* Firefox */
   }
 
 
@@ -363,6 +381,7 @@ article {
     border-width: 1px;
     text-align: center;
     padding: 0px;
+    /* Hover effect below */
     transition: 0.9s;
     position: relative;
     overflow: hidden;
@@ -392,6 +411,8 @@ article {
 .btn_my:hover::before {
     height: 180%;
 }
+
+/* Current page indicator in Navbar */
 .current_page {
     text-decoration: overline solid 1px #122633;
 }
@@ -405,6 +426,7 @@ article {
 .contact_text p {
     line-height: 11px;
     font-size: 19px;
+    /* font-family: 'Montserrat', sans-serif; */
     font-family: Segoe UI;
     word-wrap: break-word;
     line-height: 1;
@@ -413,6 +435,7 @@ article {
 .contact_text h5 {
     margin-bottom: 10px;
     font-size: 22px;
+    /* font-family: 'Montserrat', sans-serif; */
     font-family: Segoe UI;
 }
 #contact_and_maps {
