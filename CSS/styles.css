@@ -1,0 +1,467 @@
+/*Just for Maitree font */
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@400;500&display=swap');
+
+* {
+    font-family: 'Maitree', serif;
+    font-weight: 400;
+}
+body {
+    background-color: #122633;   /* Darker blue */
+    color: #244C66;  /* Yellow */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+}
+
+article {
+    background-color: #D3D5D2; /* white-gray */
+    color: #401E08;  /* black */
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    article {
+        margin: 0px 0px;
+    }
+}
+/* Carousel */
+.my_carousel {
+    /* width: 100%; */
+    height: 25vw;
+}
+.into_carousel {
+    /* object-fit: fill; */
+}
+.carousel-item {
+    height: 25vw;
+}
+.img_carousel {
+    height: 25vw;
+    object-fit: cover;
+}
+.img_carousel_1 {
+    object-position: bottom;
+}
+.img_carousel_4 {
+    object-position: bottom;
+}
+/* doesnt squeeze less than 386px */
+
+/* Flags */
+.all-flags {
+    width: 100%;
+    height: 1px;
+    position: relative;
+}
+@media (max-width: 460px) {
+    .all-flags {
+        /* width: 100%; */
+        width: 80vw;
+        height: 1px;
+        margin-top: 50px;
+        float: left;
+        position: absolute;
+    }
+    .flags {
+        margin-right: 1vw;
+    }
+}
+.flags {
+    position: absolute;
+    width: 30px;
+    margin-top: 5px;
+    height: 18px;
+}
+.PL {
+    right: 40px;
+}
+.UK {
+    right: 5px;
+}
+/* Main page below */
+.text_and_img {
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+}
+@media (max-width: 1300px) {
+    .text_and_img {
+        flex-direction: column-reverse;
+    }
+}
+@media (min-width: 1300px) {
+    .text_and_img {
+        max-width: 1000px;
+        margin-left: calc((100% - 1000px) / 2)
+    }
+}
+.title_text {
+    display: flex;
+}
+.text {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    width: 100%;
+    font-size: 20px;
+}
+@media (max-width: 770px) {
+    .text {
+        font-size: 18px;
+    }
+}
+@media (max-width: 565px) {
+    .text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 440px) {
+    .text {
+        font-size: 12px;
+    }
+}
+#turbine_img {
+    width: 350px;
+    max-width: 100%;
+    padding-left: 3px;
+    padding-top: 15px;
+}
+/* @media (max-width: 800px) {
+    #turbine {
+        width: 200px;
+    }
+} */
+.logo_menu {
+    display: flex;
+    align-items: center;
+    /* margin-top: -10px; */
+    border-bottom: 1.5px #122633;
+    border-bottom-style: ridge;
+}
+.logo_href {
+    margin-left: calc((100% - 923px) / 2);
+}
+.logo {
+    width: 350px;
+    height: 160px;
+    object-fit: cover;
+}
+/* Nav */
+.nav-link {
+    display: inline-block;
+    position: relative;
+    color: black;
+    font-size: 25px;/* text-transform: uppercase; */
+}
+@media (max-width: 1165px) {
+    .logo_href {
+        margin-left: calc((100% - 725px) / 2);
+    }
+    .logo {
+        width: 240px;
+        height: 120px;
+    }
+    .nav-link {
+        font-size: 20px;
+    }
+}
+@media (max-width: 910px) {
+    .logo_href {
+        margin-left: calc((100% - 600px) / 2);
+    }
+    .logo {
+        width: 220px;
+        height: 100px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+}
+@media (max-width: 838px) {
+    .logo_href {
+        margin-left: calc((100% - 590px) / 2);
+    }
+    .logo {
+        width: 170px;
+        /* height: 80px; */
+        margin: -13px auto;
+        object-fit: fill;
+    }
+}
+@media (max-width: 1050px) {
+}
+.seperators {
+    border-left: solid 1px;
+}
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0); /* it initially hide the element */
+    height: 1px; /* thickness of underline */
+    bottom: 0;
+    left: 0;
+    background-color: #122633; /* color of underscore */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    color: black;
+  }
+
+.nav-link:hover:after {
+    transform: scaleX(1); /* while hovering the underscore is displayed */
+    transform-origin: bottom left;
+}
+.nav-link:hover, nav-link:focus, nav-link:active { /* thanks to this, the blue color while hovering disapeared */
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle-btn {
+    float: center;
+    font-size: 28px;
+    /* padding-left: 20vw; */
+    display: none !important;
+}
+@media (max-width: 725px) {
+    .menu_toggle {
+        /* display: flex; */
+        display: block;
+        flex-direction: column-reverse;
+    }
+    .menu-toggle-btn {
+        display: block !important;
+
+    }
+    .navigation-menu {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #122633;
+        border-radius: 6px;
+        /* width: 35vw; */
+        width: 160px;
+    }
+    .nav a {
+        color: #D3D5D2;
+    }
+    .nav-link:hover, nav-link:focus, nav-link:active {
+        color: #D3D5D2;
+        text-decoration: none;
+    }
+    .logo_menu {
+        flex-direction: column;
+        overflow: hidden; /*makes the part going out of div dissapears */
+        justify-content: center;
+    }
+    .logo_href {
+        /* margin-left: calc((100% - 150px) / 2); */
+        justify-content: center;
+        margin: 5px 0 0 0;
+    }
+    .logo {
+        width: 150px;
+        height: 80px;
+        object-fit: cover;
+    }
+    .seperators {
+        border-left: none;
+    }
+}
+/* While clicking on the toggle: */
+.navigation-menu.active {
+    display: block;
+}
+/* Footer style below */
+.foot {
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #122633;
+    display: flex;
+}
+.footer {
+    background-color: #D3D5D2;
+    color: gray;
+    font-family: Verdana;
+    font-size: 13px;
+    width: 50%;
+    margin-bottom: 3px;
+}
+.footer_left {
+    text-align: left;
+    margin-left: 4px;
+}
+.footer_right {
+    text-align: right;
+    margin-right: 4px;
+}
+
+/* Quote */
+.quote_text {
+    /* width: 100%; */
+    width: 700px;
+    margin-left: calc((100% - 700px) / 2);
+    padding-top: 11px;
+}
+@media (max-width: 900px) {
+    .quote_text {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+.quote_text p {
+    font-size: 20px;
+}
+.parent_all_forms {
+    display: flex;
+    justify-content: center;
+}
+.all_forms {
+    display: flex;
+    width: 490px;
+}
+.short_forms {
+    width: 240px;
+}
+.small_form {
+    width: 240px;
+    font-family: Segoe UI;
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+#comment_box {
+    width: 240px;
+}
+#comment {
+    width: 240px;
+    height: 220px;
+    font-family: Segoe UI;
+    font-size: 17px;
+    margin-left: 1px;
+}
+#comment, .small_form {
+    border: 1.2px solid #122633;
+    background-color: #DCDDDB;
+    color: #122633;  /* color of text written by user */
+}
+
+::placeholder {
+    color: #122633;
+    opacity: 1; /* Firefox */
+  }
+
+
+@media (max-width: 690px) {
+    .parent_all_forms {
+        display: flex;
+        justify-content: center;
+    }
+    .all_forms {
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width: 316px) {
+    .small_form, #comment {
+        max-width: 215px;
+    }
+}
+
+/* Button style below */
+.btn_my {
+    height: 35px;
+    width: 75px;
+    border-radius: 4px;
+    border-width: 1px;
+    text-align: center;
+    padding: 0px;
+    /* Hover effect below */
+    transition: 0.9s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    background: #122633;
+    color: white;
+    font-family: Segoe UI;
+    font-size: 16px;
+}
+.btn_my:hover {
+    color: black;
+}
+.btn_my::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: silver;
+    color: black;
+    font-weight: 700;
+    z-index: -1;
+    transition: 0.6s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn_my:hover::before {
+    height: 180%;
+}
+
+/* Current page indicator in Navbar */
+.current_page {
+    text-decoration: overline solid 1px #122633;
+}
+.current_page:hover, current_page:focus, current_page:active {
+    text-decoration: overline solid 1px #122633;
+}
+
+#contact_data1 {
+    margin-top: 15px;
+}
+.contact_text p {
+    line-height: 11px;
+    font-size: 19px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Segoe UI;
+    word-wrap: break-word;
+    line-height: 1;
+    margin: 13px 0;
+}
+.contact_text h5 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Segoe UI;
+}
+#contact_and_maps {
+    display: flex;
+}
+#map_box {
+    width: calc(100% - 310px);
+}
+.both_maps {
+    height: 275px;
+    width: 100%;
+}
+.contact_text {
+    text-align: left;
+    padding-left: 7px;
+    width: 310px;
+}
+@media (max-width: 745px) {
+    #contact_and_maps {
+        display: inline;
+    }
+    .contact_text {
+        text-align: center;
+        width: 100%;
+    }
+    #map_box {
+        width: 100%;
+    }
+}
