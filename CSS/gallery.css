@@ -151,7 +151,7 @@
     max-width: 80vw;
     object-position: center;
 }
-/*  */
+
 @media (min-width: 1250px) {
     .img-window img {
         /* height: auto; */
