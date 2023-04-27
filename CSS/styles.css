@@ -329,19 +329,22 @@ article {
 }
 .small_form {
     width: 240px;
+    height: 29px;
     font-family: Segoe UI;
     font-size: 17px;
     margin-bottom: 2px;
+    border-radius: 3px;
 }
 #comment_box {
     width: 240px;
 }
 #comment {
     width: 240px;
-    height: 220px;
+    height: 215px;
     font-family: Segoe UI;
     font-size: 17px;
     margin-left: 1px;
+    border-radius: 2px;
 }
 #comment, .small_form {
     border: 1.2px solid #122633;
