@@ -35,7 +35,7 @@ if (galleryImages) {
                 newNextBtn.appendChild(btnNextText);
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class", "img-btn-next");
-                newNextBtn.setAttribute("onclick", "changeImg(1)");
+                newNextBtn.setAttribute("onclick", "changeImg(1)"); // Function changeImg declared further
                 newNextBtn.style.cssText = "left: " + calcImgToEdge + "px;";
 
                 // "Previous" button
@@ -70,6 +70,7 @@ function changeImg(changeDigit) {
     getImgWindow.appendChild(newImg);
 
     let calcNewImg;
+
     if (changeDigit === 1) {
         calcNewImg = getLatestOpenedImg + 1; // +1 due to moving to img with higher number
         if (calcNewImg > galleryImages.length) {
