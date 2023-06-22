@@ -1,4 +1,3 @@
-/*Just for Maitree font */
 @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@400;500&display=swap');
 
 * {
@@ -29,11 +28,7 @@ article {
 }
 /* Carousel */
 .my_carousel {
-    /* width: 100%; */
     height: 25vw;
-}
-.into_carousel {
-    /* object-fit: fill; */
 }
 .carousel-item {
     height: 25vw;
@@ -48,8 +43,6 @@ article {
 .img_carousel_4 {
     object-position: bottom;
 }
-/* doesnt squeeze less than 386px */
-
 /* Flags */
 .all-flags {
     width: 100%;
@@ -58,7 +51,6 @@ article {
 }
 @media (max-width: 460px) {
     .all-flags {
-        /* width: 100%; */
         width: 80vw;
         height: 1px;
         margin-top: 50px;
@@ -129,15 +121,9 @@ article {
     padding-left: 3px;
     padding-top: 15px;
 }
-/* @media (max-width: 800px) {
-    #turbine {
-        width: 200px;
-    }
-} */
 .logo_menu {
     display: flex;
     align-items: center;
-    /* margin-top: -10px; */
     border-bottom: 1.5px #122633;
     border-bottom-style: ridge;
 }
@@ -154,7 +140,7 @@ article {
     display: inline-block;
     position: relative;
     color: black;
-    font-size: 25px;/* text-transform: uppercase; */
+    font-size: 25px;
 }
 @media (max-width: 1165px) {
     .logo_href {
@@ -186,7 +172,6 @@ article {
     }
     .logo {
         width: 170px;
-        /* height: 80px; */
         margin: -13px auto;
         object-fit: fill;
     }
@@ -200,11 +185,11 @@ article {
     content: '';
     position: absolute;
     width: 100%;
-    transform: scaleX(0); /* it initially hide the element */
+    transform: scaleX(0);
     height: 1px; /* thickness of underline */
     bottom: 0;
     left: 0;
-    background-color: #122633; /* color of underscore */
+    background-color: #122633;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     color: black;
@@ -214,7 +199,7 @@ article {
     transform: scaleX(1); /* while hovering the underscore is displayed */
     transform-origin: bottom left;
 }
-.nav-link:hover, nav-link:focus, nav-link:active { /* thanks to this, the blue color while hovering disapeared */
+.nav-link:hover, nav-link:focus, nav-link:active {
     color: black;
     text-decoration: none;
 }
@@ -222,12 +207,10 @@ article {
 .menu-toggle-btn {
     float: center;
     font-size: 28px;
-    /* padding-left: 20vw; */
     display: none !important;
 }
 @media (max-width: 725px) {
     .menu_toggle {
-        /* display: flex; */
         display: block;
         flex-direction: column-reverse;
     }
@@ -243,7 +226,6 @@ article {
         flex-direction: column;
         background-color: #122633;
         border-radius: 6px;
-        /* width: 35vw; */
         width: 160px;
     }
     .nav a {
@@ -255,11 +237,10 @@ article {
     }
     .logo_menu {
         flex-direction: column;
-        overflow: hidden; /*makes the part going out of div dissapears */
+        overflow: hidden;
         justify-content: center;
     }
     .logo_href {
-        /* margin-left: calc((100% - 150px) / 2); */
         justify-content: center;
         margin: 5px 0 0 0;
     }
@@ -302,7 +283,6 @@ article {
 
 /* Quote */
 .quote_text {
-    /* width: 100%; */
     width: 700px;
     margin-left: calc((100% - 700px) / 2);
     padding-top: 11px;
@@ -429,7 +409,6 @@ article {
 .contact_text p {
     line-height: 11px;
     font-size: 19px;
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: Segoe UI;
     word-wrap: break-word;
     line-height: 1;
@@ -438,7 +417,6 @@ article {
 .contact_text h5 {
     margin-bottom: 10px;
     font-size: 22px;
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: Segoe UI;
 }
 #contact_and_maps {

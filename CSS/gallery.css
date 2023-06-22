@@ -1,4 +1,3 @@
-/*Just for Maitree font */
 @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@400;500&display=swap');
 
 #gallery {
@@ -110,7 +109,6 @@
     align-items: center;
 }
 
-/* The hover effect */
 .gallery-img div:hover { 
     opacity: 0.85;
     transition: all ease-in-out 100ms;
@@ -120,7 +118,7 @@
     font-family: 'Maitree', serif;
     font-size: 2vh;
     color: #D3D5D2;
-    text-decoration: none; /* Only because there is underlining by default */
+    text-decoration: none;
     text-align: center;
 }
 @media (max-width: 900px) {
@@ -128,7 +126,7 @@
         font-size: 2vw;
     }
 }
-/* This is window which pop up when clicked */
+/* Pop up window */
 .img-window {
     width: 100%;
     height: 100%;
@@ -146,20 +144,17 @@
     padding: 0px 2px 0px 2px;
 }
 
-.img-window img { /* This "img" is tagName from line 25 (let newImg = document.createElement("img");).    Putting "img" means we gonna style img inside the container */
-    max-height: 80vh; /* 100% height of the viewport */
+.img-window img {
+    max-height: 80vh;
     max-width: 80vw;
     object-position: center;
 }
 
 @media (min-width: 1250px) {
     .img-window img {
-        /* height: auto; */
         max-width: 1000px;
-        /* object-position: center; */
     }
 }
-/* Responsive for smartphones */
 @media (max-width: 800px) {
     .img-window img {
         height: auto;
@@ -167,7 +162,6 @@
         object-position: center;
     }
 }
-/* next/previous buttons */
 .img-btn-next, .img-btn-prev {
     display: block;
     padding: 3px 8px;
